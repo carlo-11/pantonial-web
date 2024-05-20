@@ -1,0 +1,294 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 8em 2em 2em 2em;
+    text-align: center;
+    min-height: 100vh;
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Styles for Skills Section */
+#skills {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    text-align: left;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+    box-sizing: border-box;
+}
+
+#skills table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 1em;
+}
+
+#skills th, #skills td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#skills th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#skills tr:hover {
+    background-color: #f1f1f1;
+}
+
+#skills .progress-bar {
+    display: block;
+    height: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 4px;
+}
+
+/* Styles for Contact Section */
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact i {
+    margin-right: 8px;
+}
+
+/* CSS for Photo Gallery */
+.content-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo-gallery {
+    position: relative;
+    max-width: 800px; /* Adjusted max-width */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.photo-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.photos {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.photos img {
+    width: 60%; /* Adjusted width to fill the container */
+    height: auto; /* Ensure aspect ratio is maintained */
+    display: block;
+}
+
+.slide-button {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    border-radius: 25px; /* Add some border radius for rounded corners */
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background color */
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.slide-button:hover {
+    background-color: rgba(0, 0, 0, 1); /* Darker background color on hover */
+}
+
+/* CSS for About Me Section */
+.content-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1 1 600px;
+    max-width: 600px;
+}
+
+.about-media {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.professional-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.intro-video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/* General Table Styles */
+.about-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.about-table th,
+.about-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.about-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.about-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* General Styles */
+.content-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center; /* Center all content */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Name Styling */
+.name {
+    font-size: 2.5em; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+}
+
